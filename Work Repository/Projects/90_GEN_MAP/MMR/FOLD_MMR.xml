@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <SunopsisExport>
 <Admin RepositoryVersion="05.02.02.09" IsLegacyIdCompatible="false" />
-<Encryption algorithm="AES" keyLength="128" exportKeyHash="" keyVect="1pwXy7zo8u38J5atZqPwfA==" exportKeySalt="e0f1a477-53b5-4642-a329-e115fb4e875a" containsCipherText="false"/>
+<Encryption algorithm="AES" keyLength="128" exportKeyHash="" keyVect="aRUuNNZJYwEiCxRuji0NKA==" exportKeySalt="2aa94285-3cf1-4107-b482-94b486354f32" containsCipherText="false"/>
 <Object class="com.sunopsis.dwg.dbobj.SnpFolder">
 		<Field name="ExtVersion" type="java.lang.String">null</Field>
 	<Field name="FirstDate" type="java.sql.Timestamp"><![CDATA[2021-05-28 16:45:53.0]]></Field>
@@ -12,12 +12,20 @@
 	<Field name="IntVersion" type="com.sunopsis.sql.DbInt"><![CDATA[1]]></Field>
 	<Field name="IFolder" type="com.sunopsis.sql.DbInt"><![CDATA[41]]></Field>
 	<Field name="IProject" type="com.sunopsis.sql.DbInt"><![CDATA[21]]></Field>
-	<Field name="LastDate" type="java.sql.Timestamp"><![CDATA[2021-05-28 16:46:36.0]]></Field>
+	<Field name="LastDate" type="java.sql.Timestamp"><![CDATA[2021-06-04 14:49:03.0]]></Field>
 	<Field name="LastUser" type="java.lang.String"><![CDATA[ROSTARM]]></Field>
 	<Field name="OrdFolder" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
 	<Field name="ParIFolder" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
 	<Field name="ReleaseTag" type="java.lang.String">null</Field>
 	<Field name="VLastDate" type="java.sql.Timestamp">null</Field>
+</Object>
+<Object class="com.sunopsis.dwg.dbobj.SnpChildFCO">
+		<Field name="Type" type="java.lang.String"><![CDATA[SnpTrt]]></Field>
+	<Field name="SubType" type="java.lang.String"><![CDATA[U]]></Field>
+	<Field name="Name" type="java.lang.String"><![CDATA[pre_MB_od_MR]]></Field>
+	<Field name="GlobalId" type="java.lang.String"><![CDATA[3cd2f400-bfbd-4e7f-a213-8c3c9b85838b]]></Field>
+	<Field name="Version" type="java.lang.String"><![CDATA[5b379c000de99a8e1529f1ab4a6708a33e866311]]></Field>
+	<Field name="Path" type="java.lang.String"><![CDATA[Procedures/TRT_pre_MB_od_MR.xml]]></Field>
 </Object>
 <Object class="com.sunopsis.dwg.dbobj.SnpFKXRef">
 		<Field name="RefKey" type="java.lang.String"><![CDATA[SNP_PROJECT.21]]></Field>
