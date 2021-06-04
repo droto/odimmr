@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <SunopsisExport>
 <Admin RepositoryVersion="05.02.02.09" IsLegacyIdCompatible="false" />
-<Encryption algorithm="AES" keyLength="128" exportKeyHash="" keyVect="uP0spuJWD6D/i2VzPJttKg==" exportKeySalt="ad864510-3932-4efc-aabf-8b10e79726c5" containsCipherText="false"/>
+<Encryption algorithm="AES" keyLength="128" exportKeyHash="" keyVect="QEBpG4JXMM0YuWtzTdZJwg==" exportKeySalt="60582cd4-6737-4720-870d-c518adeb08d8" containsCipherText="false"/>
 <Object class="com.sunopsis.dwg.dbobj.SnpTrt">
 		<Field name="CleanupOnError" type="java.lang.String"><![CDATA[0]]></Field>
 	<Field name="CompType" type="java.lang.String">null</Field>
@@ -24,7 +24,7 @@
 	<Field name="IndJrnMethod" type="java.lang.String">null</Field>
 	<Field name="IndSuppSetBased" type="java.lang.String">null</Field>
 	<Field name="IntgType" type="java.lang.String">null</Field>
-	<Field name="IntVersion" type="com.sunopsis.sql.DbInt"><![CDATA[3]]></Field>
+	<Field name="IntVersion" type="com.sunopsis.sql.DbInt"><![CDATA[4]]></Field>
 	<Field name="IsConcurrent" type="java.lang.String"><![CDATA[0]]></Field>
 	<Field name="IsSeeded" type="java.lang.String">null</Field>
 	<Field name="IBaseCompKm" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
@@ -43,7 +43,7 @@
 	<Field name="KmSrcTechno" type="java.lang.String">null</Field>
 	<Field name="KmTechno" type="java.lang.String">null</Field>
 	<Field name="KmVersion" type="java.lang.String">null</Field>
-	<Field name="LastDate" type="java.sql.Timestamp"><![CDATA[2021-06-04 14:49:03.0]]></Field>
+	<Field name="LastDate" type="java.sql.Timestamp"><![CDATA[2021-06-04 15:47:06.0]]></Field>
 	<Field name="LastUser" type="java.lang.String"><![CDATA[ROSTARM]]></Field>
 	<Field name="LkmType" type="java.lang.String">null</Field>
 	<Field name="LChecksum" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
@@ -61,23 +61,6 @@
 	<Field name="TrtType" type="java.lang.String"><![CDATA[U]]></Field>
 	<Field name="VariableDefs" type="java.lang.String">null</Field>
 	<Field name="VLastDate" type="java.sql.Timestamp">null</Field>
-</Object>
-<Object class="com.sunopsis.dwg.dbobj.SnpTxtHeader">
-		<Field name="Enc" type="java.lang.String"><![CDATA[0]]></Field>
-	<Field name="EncKey" type="java.lang.String">null</Field>
- <Field name="EncKeyVect" type="java.lang.String">null</Field>
-	<Field name="GlobalId" type="java.lang.String"><![CDATA[966cc739-471d-4884-a988-8ca437678ce2]]></Field>
-	<Field name="ITxt" type="com.sunopsis.sql.DbInt"><![CDATA[2199]]></Field>
-	<Field name="ITxtOrig" type="com.sunopsis.sql.DbInt"><![CDATA[107]]></Field>
-	<Field name="SqlIndGrp" type="java.lang.String"><![CDATA[0]]></Field>
- <Field name="Txt" type="java.lang.String">null</Field>
-</Object>
-<Object class="com.sunopsis.dwg.dbobj.SnpOrigTxt">
-		<Field name="GlobalId" type="java.lang.String">null</Field>
-	<Field name="ITxtOrig" type="com.sunopsis.sql.DbInt"><![CDATA[107]]></Field>
-	<Field name="OrigineName" type="java.lang.String"><![CDATA[Edit Command]]></Field>
-	<Field name="SnpsCol" type="java.lang.String"><![CDATA[I_TXT_TRT_TXT]]></Field>
-	<Field name="SnpsTable" type="java.lang.String"><![CDATA[SNP_TRT]]></Field>
 </Object>
 <Object class="com.sunopsis.dwg.dbobj.SnpLineTrt">
 		<Field name="AlwaysExe" type="java.lang.String"><![CDATA[1]]></Field>
@@ -135,8 +118,8 @@
 	<Field name="KlmAfterInt" type="java.lang.String">null</Field>
 	<Field name="KlmIdx" type="java.lang.String">null</Field>
 	<Field name="KlmJrn" type="java.lang.String">null</Field>
-	<Field name="LastDate" type="java.sql.Timestamp">null</Field>
-	<Field name="LastUser" type="java.lang.String">null</Field>
+	<Field name="LastDate" type="java.sql.Timestamp"><![CDATA[2021-06-04 15:47:06.0]]></Field>
+	<Field name="LastUser" type="java.lang.String"><![CDATA[ROSTARM]]></Field>
 	<Field name="LineType" type="java.lang.String">null</Field>
 	<Field name="LogLevDet" type="java.lang.String"><![CDATA[3]]></Field>
 	<Field name="MapTaskType" type="java.lang.String"><![CDATA[EM]]></Field>
@@ -146,7 +129,7 @@
 	<Field name="VariableDefs" type="java.lang.String">null</Field>
 </Object>
 <Object class="com.sunopsis.dwg.dbobj.SnpTxtHeader">
-		<Field name="Enc" type="java.lang.String"><![CDATA[0]]></Field>
+		<Field name="Enc" type="java.lang.String">null</Field>
 	<Field name="EncKey" type="java.lang.String">null</Field>
  <Field name="EncKeyVect" type="java.lang.String">null</Field>
 	<Field name="GlobalId" type="java.lang.String"><![CDATA[7af289ce-5f7f-4bd6-8fb9-a55d01e8caa1]]></Field>
@@ -328,7 +311,7 @@ inst.getTransactionManager().commit(trans)
 // Close instance
 auth = inst.getSecurityManager().getCurrentAuthentication()
 inst.getSecurityManager().clearCurrentThreadAuthentication()
-//ddd
+
 auth.close()
 inst.close()
 
@@ -366,13 +349,6 @@ catch (Exception e)
  <Field name="RefObjFQNameLengths" type="java.lang.String"><![CDATA[10]]></Field>
 </Object>
 <Object class="com.sunopsis.dwg.dbobj.SnpFKXRef">
-		<Field name="RefKey" type="java.lang.String"><![CDATA[SNP_TXTHEADER.2199]]></Field>
-	<Field name="RefObjGlobalId" type="java.lang.String"><![CDATA[966cc739-471d-4884-a988-8ca437678ce2]]></Field>
- <Field name="RefObjFQName" type="java.lang.String">null</Field>
- <Field name="RefObjFQType" type="java.lang.String">null</Field>
- <Field name="RefObjFQNameLengths" type="java.lang.String">null</Field>
-</Object>
-<Object class="com.sunopsis.dwg.dbobj.SnpFKXRef">
 		<Field name="RefKey" type="java.lang.String"><![CDATA[SNP_TXTHEADER.2200]]></Field>
 	<Field name="RefObjGlobalId" type="java.lang.String"><![CDATA[7af289ce-5f7f-4bd6-8fb9-a55d01e8caa1]]></Field>
  <Field name="RefObjFQName" type="java.lang.String">null</Field>
@@ -396,11 +372,11 @@ catch (Exception e)
 	<Field name="LinkDiagNb" type="com.sunopsis.sql.DbInt"><![CDATA[0]]></Field>
 	<Field name="MorigTxtNb" type="com.sunopsis.sql.DbInt"><![CDATA[0]]></Field>
 	<Field name="MtxtNb" type="com.sunopsis.sql.DbInt"><![CDATA[0]]></Field>
-	<Field name="OrigTxtNb" type="com.sunopsis.sql.DbInt"><![CDATA[2]]></Field>
+	<Field name="OrigTxtNb" type="com.sunopsis.sql.DbInt"><![CDATA[1]]></Field>
 	<Field name="OtherObjectsNb" type="com.sunopsis.sql.DbInt"><![CDATA[2]]></Field>
 	<Field name="PlanAgentNb" type="com.sunopsis.sql.DbInt"><![CDATA[0]]></Field>
 	<Field name="StepNb" type="com.sunopsis.sql.DbInt"><![CDATA[0]]></Field>
-	<Field name="TxtNb" type="com.sunopsis.sql.DbInt"><![CDATA[2]]></Field>
+	<Field name="TxtNb" type="com.sunopsis.sql.DbInt"><![CDATA[1]]></Field>
 	<Field name="UeOrigNb" type="com.sunopsis.sql.DbInt"><![CDATA[0]]></Field>
 	<Field name="UeUsedNb" type="com.sunopsis.sql.DbInt"><![CDATA[0]]></Field>
 	<Field name="VarPlanAgentNb" type="com.sunopsis.sql.DbInt"><![CDATA[0]]></Field>
